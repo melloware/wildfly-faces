@@ -34,7 +34,7 @@ Some addition goals:
 The following client and server metrics were captured while hitting the exact same page [/datatable/crud.xhtml](https://www.primefaces.org/showcase/ui/data/datatable/crud.xhtml)
 Using `Incognito Mode` and pressing CTRL+F5 so it forced the browser to load all resources from the server with nothing cached.
 
-Metric                |  WildFly EE | Liberty        | Liberty (optimized) | Improvement |
+Metric                |  WildFly EE | Bootable       | Bootable (optimized) | Improvement |
 ----------------------| ----------  | ---------------| --------------------|-------------|
 Package Size          | 48.5 MB WAR | 154.0 MB JAR   | 154.0 MB JAR        | -217.53%    |
 Cold Startup          | 10.3 s      | 8.7 s          | 8.7 s               | 15.53%      |
