@@ -7,7 +7,7 @@ WildFly Bootable Faces
 ### Goals
 ***
 The main goal was to take an out of the box JSF application ([PrimeFaces Showcase](https://github.com/primefaces/primefaces-showcase)) 
-and run it in both a Java EE Server and in [WildFly Bootable](https://docs.wildfly.org/bootablejar/#_package). 
+and run it in both a Java EE Server and in [WildFly Bootable](https://docs.wildfly.org/bootablejar/). 
 Some addition goals:
 - See how much we can improve performance by incorporating various optimization tricks for JSF applications
 - See if WildFly Bootable is a viable option for JSF and migrating to Docker containers
