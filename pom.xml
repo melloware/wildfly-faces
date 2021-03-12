@@ -29,7 +29,7 @@
         <version.bootable.jar>3.0.2.Final</version.bootable.jar>
         <version.wildfly>22.0.0.Final</version.wildfly>
         <version.server.bom>22.0.1.Final</version.server.bom>
-        <version.microprofile.bom>${version.wildfly}</version.microprofile.bom>
+        <version.microprofile.bom>23.0.0.Final</version.microprofile.bom>
     </properties>
 
     <dependencyManagement>
