@@ -28,7 +28,7 @@
         <jsf.stage>Production</jsf.stage>
         <version.bootable.jar>4.0.0.Final</version.bootable.jar>
         <version.wildfly>22.0.0.Final</version.wildfly>
-        <version.server.bom>22.0.1.Final</version.server.bom>
+        <version.server.bom>23.0.0.Final</version.server.bom>
         <version.microprofile.bom>23.0.0.Final</version.microprofile.bom>
     </properties>
 
