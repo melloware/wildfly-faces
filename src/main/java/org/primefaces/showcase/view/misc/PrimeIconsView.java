@@ -27,9 +27,9 @@ import org.primefaces.shaded.json.JSONArray;
 import org.primefaces.shaded.json.JSONException;
 import org.primefaces.shaded.json.JSONObject;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Named;
+import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Named;
 import java.io.*;
 import java.net.URL;
 import java.nio.charset.Charset;

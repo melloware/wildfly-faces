@@ -34,7 +34,7 @@ import org.primefaces.model.filter.FilterConstraint;
 import org.primefaces.showcase.domain.Customer;
 import org.primefaces.util.LocaleUtils;
 
-import javax.faces.context.FacesContext;
+import jakarta.faces.context.FacesContext;
 
 /**
  * Dummy implementation of LazyDataModel that uses a list to mimic a real datasource like a database.
