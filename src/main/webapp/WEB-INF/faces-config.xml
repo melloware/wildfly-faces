@@ -40,7 +40,7 @@
         <renderer>
             <component-family>javax.faces.Output</component-family>
             <renderer-type>javax.faces.Head</renderer-type>
-            <renderer-class>com.sun.faces.renderkit.html_basic.HeadRenderer</renderer-class>
+            <renderer-class>org.apache.myfaces.renderkit.html.HtmlHeadRenderer</renderer-class>
         </renderer>
     </render-kit>
 

@@ -22,6 +22,7 @@ Some addition goals:
 
 ### Optimizations
 ***
+- Apache MyFaces (Bootable) instead of Jakarta Mojarra (Wildfly)
 - PrimeFaces [MOVE_SCRIPTS_TO_BOTTOM](https://primefaces.github.io/primefaces/10_0_0/#/gettingstarted/configuration?id=configuration)
 - OmniFaces [GzipResponseFilter](https://showcase.omnifaces.org/filters/GzipResponseFilter)
 - OmniFaces [CombinedResourceHandler](https://showcase.omnifaces.org/resourcehandlers/CombinedResourceHandler)

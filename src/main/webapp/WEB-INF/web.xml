@@ -37,6 +37,11 @@
         <param-name>javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL</param-name>
         <param-value>true</param-value>
     </context-param>
+    <!-- Disable ViewState compression (better performance but more memory usage) -->
+    <context-param>
+        <param-name>com.sun.faces.compressViewState</param-name>
+        <param-value>false</param-value>
+    </context-param>
 
     <context-param>
         <param-name>primefaces.PRIVATE_CAPTCHA_KEY</param-name>
@@ -86,33 +91,41 @@
         <param-name>primefaces.MULTI_VIEW_STATE_STORE</param-name>
         <param-value>client-window</param-value>
     </context-param>
-    <!--
-    <context-param>
-        <param-name>primefaces.FLEX</param-name>
-        <param-value>true</param-value>
-    </context-param>
-    -->
 
-    <!-- Context parameters - Mojarra -->
+    <!-- Context parameters - MyFaces -->
     <context-param>
-        <param-name>javax.faces.PARTIAL_STATE_SAVING</param-name>
+        <param-name>org.apache.myfaces.CACHE_EL_EXPRESSIONS</param-name>
+        <param-value>alwaysRecompile</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.CHECK_ID_PRODUCTION_MODE</param-name>
         <param-value>false</param-value>
     </context-param>
     <context-param>
-        <param-name>com.sun.faces.disableIdUniquenessCheck</param-name>
+        <param-name>org.apache.myfaces.EARLY_FLUSH_ENABLED</param-name>
         <param-value>true</param-value>
     </context-param>
-    <!-- reduce saved view states -->
     <context-param>
-        <param-name>com.sun.faces.numberOfViewsInSession</param-name>
+        <param-name>org.apache.myfaces.NUMBER_OF_VIEWS_IN_SESSION</param-name>
         <param-value>15</param-value>
     </context-param>
-
-    <!-- Disable ViewState compression (better performance but more memory usage) -->
     <context-param>
-        <param-name>com.sun.faces.compressViewState</param-name>
+        <param-name>org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION</param-name>
+        <param-value>3</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL</param-name>
         <param-value>false</param-value>
     </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE</param-name>
+        <param-value>500</param-value>
+    </context-param>
+
     <!-- Context parameters - OmniFaces -->
     <context-param>
         <param-name>org.omnifaces.COMBINED_RESOURCE_HANDLER_DISABLED</param-name>
@@ -193,6 +206,11 @@
         <servlet-name>FileUpload Resume Servlet</servlet-name>
         <url-pattern>/file/resume/</url-pattern>
     </servlet-mapping>
+
+    <listener>
+        <listener-class>org.apache.myfaces.webapp.StartupServletContextListener</listener-class>
+    </listener>
+
 
     <mime-mapping>
         <extension>ttf</extension>
