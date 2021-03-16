@@ -39,11 +39,11 @@ Metric                |  WildFly EE | Bootable       | Bootable (optimized) | Im
 ----------------------| ----------  | ---------------| --------------------|-------------|
 Package Size          | 48.5 MB WAR | 154.0 MB JAR   | 154.0 MB JAR        | -217.53%    |
 Cold Startup          | 10.3 s      | 8.7 s          | 8.7 s               | 15.53%      |
-Memory Used           | 140 MB      | 83.4 MB        | 83.4 MB             | 40.43%      |
+Memory Used           | 140 MB      | 66.8 MB        | 66.8 MB             | 52.21%      |
 HTTP Requests         | 114         | 114            | 89                  | 21.93%      |
 Resource Size         | 4.4 MB      | 4.4 MB         | 4.4 MB              | -----       |
 Transferred Size      | 4.4 MB      | 4.4 MB         | 2.9 MB              | 34.09%      |
-DOM Loaded            | 1150 ms     | 1340 ms        | 876 ms              | 23.83%      |
+DOM Loaded            | 1150 ms     | 1340 ms        | 806 ms              | 29.91%      |
 Lighthouse Score      | 59/100      | 51/100         | 98/100              | 66.10%      |
 First Paint           | 2.4 s       | 2.6 s          | 0.5 s               | 79.17%      |
 Largest Paint         | 2.7 s       | 4.2 s          | 1.1 s               | 73.81%      |
