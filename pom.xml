@@ -297,7 +297,7 @@
                 <configuration>
                     <feature-packs>
                         <feature-pack>
-                            <location>wildfly@maven(org.jboss.universe:community-universe)#${version.wildfly}</location>
+                            <location>org.wildfly:wildfly-preview-feature-pack:${version.wildfly}</location>
                         </feature-pack>
                         <feature-pack>
                             <groupId>com.melloware</groupId>

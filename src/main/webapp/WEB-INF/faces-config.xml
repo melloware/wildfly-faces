@@ -12,8 +12,8 @@
         <view-handler>org.primefaces.application.DialogViewHandler</view-handler>
         <system-event-listener>
             <system-event-listener-class>org.primefaces.extensions.application.PrimeFacesScriptProcessor</system-event-listener-class>
-            <system-event-class>javax.faces.event.PostAddToViewEvent</system-event-class>
-            <source-class>javax.faces.component.UIViewRoot</source-class>
+            <system-event-class>jakarta.faces.event.PostAddToViewEvent</system-event-class>
+            <source-class>jakarta.faces.component.UIViewRoot</source-class>
         </system-event-listener>
         <locale-config>
             <default-locale>en</default-locale>
@@ -38,8 +38,8 @@
 
     <render-kit>
         <renderer>
-            <component-family>javax.faces.Output</component-family>
-            <renderer-type>javax.faces.Head</renderer-type>
+            <component-family>jakarta.faces.Output</component-family>
+            <renderer-type>jakarta.faces.Head</renderer-type>
             <renderer-class>org.apache.myfaces.renderkit.html.HtmlHeadRenderer</renderer-class>
         </renderer>
     </render-kit>
