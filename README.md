@@ -72,7 +72,7 @@ To run the example in HotSpot Production mode (GraalVM native-image not supporte
 ```
 git clone https://github.com/melloware/wildfly-faces
 cd wildfly-faces
-mvn clean package
+mvn clean package -Pprod
 java -jar target/wildfly-faces-bootable.jar
 ```
 
