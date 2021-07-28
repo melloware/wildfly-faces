@@ -20,9 +20,7 @@
         <primefaces.optimizer.version>2.3.5</primefaces.optimizer.version>
         <jsf.stage>Production</jsf.stage>
         <version.bootable.jar>5.0.2.Final</version.bootable.jar>
-        <version.wildfly>23.0.1.Final</version.wildfly>
-        <version.server.bom>24.0.1.Final</version.server.bom>
-        <version.microprofile.bom>24.0.1.Final</version.microprofile.bom>
+        <version.wildfly>24.0.1.Final</version.wildfly>
     </properties>
 
     <dependencyManagement>
@@ -38,7 +36,7 @@
             <dependency>
                 <groupId>org.wildfly.bom</groupId>
                 <artifactId>wildfly-jakartaee8</artifactId>
-                <version>${version.server.bom}</version>
+                <version>${version.wildfly}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -47,7 +45,7 @@
             <dependency>
                 <groupId>org.wildfly.bom</groupId>
                 <artifactId>wildfly-microprofile</artifactId>
-                <version>${version.microprofile.bom}</version>
+                <version>${version.wildfly}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
