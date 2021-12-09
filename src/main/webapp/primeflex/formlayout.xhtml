@@ -322,22 +322,22 @@
 <pre class="language-xml"><code>
 &lt;h3&gt;Vertical Checkbox&lt;/h3&gt;
 &lt;div class="p-field-checkbox"&gt;
-    &lt;Checkbox id="city1" name="city1" value="Chicago" v-model="cities1" /&gt;
+    &lt;p:checkbox id="city1" for="customChkbox1" itemIndex="0" /&gt;
     &lt;label for="city1"&gt;Chicago&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class="p-field-checkbox"&gt;
-    &lt;Checkbox id="city2" name="city1" value="Los Angeles" v-model="cities1" /&gt;
+    &lt;p:checkbox id="city2" for="customChkbox1" itemIndex="1" /&gt;
     &lt;label for="city2"&gt;Los Angeles&lt;/label&gt;
 &lt;/div&gt;
 
 &lt;h3&gt;Horizontal Checkbox&lt;/h3&gt;
 &lt;div class="p-formgroup-inline"&gt;
     &lt;div class="p-field-checkbox"&gt;
-        &lt;Checkbox id="city3" name="city2" value="Chicago" v-model="cities2" /&gt;
+        &lt;p:checkbox id="city3" for="customChkbox2" itemIndex="0" /&gt;
         &lt;label for="city3"&gt;Chicago&lt;/label&gt;
     &lt;/div&gt;
     &lt;div class="p-field-checkbox"&gt;
-        &lt;Checkbox id="city4" name="city2" value="Los Angeles" v-model="cities2" /&gt;
+        &lt;p:checkbox id="city4" for="customChkbox2" itemIndex="1" /&gt;
         &lt;label for="city4"&gt;Los Angeles&lt;/label&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -347,22 +347,22 @@
 <pre class="language-xml"><code>
 &lt;h3&gt;Vertical RadioButton&lt;/h3&gt;
 &lt;div class="p-field-radiobutton"&gt;
-    &lt;RadioButton id="city5" name="city1" value="Chicago" v-model="city1" /&gt;
+    &lt;p:radioButton id="city5" for="customRadio1" itemIndex="0" /&gt;
     &lt;label for="city5"&gt;Chicago&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class="p-field-radiobutton"&gt;
-    &lt;RadioButton id="city6" name="city1" value="Los Angeles" v-model="city1" /&gt;
+    &lt;p:radioButton id="city6" for="customRadio1" itemIndex="1" /&gt;
     &lt;label for="city6"&gt;Los Angeles&lt;/label&gt;
 &lt;/div&gt;
 
 &lt;h3&gt;Horizontal RadioButton&lt;/h3&gt;
 &lt;div class="p-formgroup-inline"&gt;
-    &lt;div class="p-field-checkbox"&gt;
-        &lt;RadioButton id="city7" name="city2" value="Chicago" v-model="city2" /&gt;
+    &lt;div class="p-field-radiobutton"&gt;
+        &lt;p:radioButton id="city7" for="customRadio2" itemIndex="0" /&gt;
         &lt;label for="city7"&gt;Chicago&lt;/label&gt;
     &lt;/div&gt;
-    &lt;div class="p-field-checkbox"&gt;
-        &lt;RadioButton id="city8" name="city2" value="Los Angeles" v-model="city2" /&gt;
+    &lt;div class="p-field-radiobutton"&gt;
+        &lt;p:radioButton id="city8" for="customRadio2" itemIndex="0" /&gt;
         &lt;label for="city8"&gt;Los Angeles&lt;/label&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -387,16 +387,16 @@
 <pre class="language-xml"><code>
 &lt;div class="ui-fluid p-formgrid p-grid"&gt;
     &lt;div class="p-field p-col-12 p-md-6"&gt;
-        &lt;label for="firstname"&gt;Firstname&lt;/label&gt;
-        &lt;p:inputText id="firstname" type="text" /&gt;
+        &lt;label for="firstname6"&gt;Firstname&lt;/label&gt;
+        &lt;p:inputText id="firstname6" type="text" /&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-6"&gt;
-        &lt;label for="lastname"&gt;Lastname&lt;/label&gt;
-        &lt;p:inputText id="lastname" type="text" /&gt;
+        &lt;label for="lastname6"&gt;Lastname&lt;/label&gt;
+        &lt;p:inputText id="lastname6" type="text" /&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12"&gt;
         &lt;label for="address"&gt;Address&lt;/label&gt;
-        &lt;Textarea id="address" rows="4" /&gt;
+        &lt;p:inputTextarea id="address" rows="4" /&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-6"&gt;
         &lt;label for="city"&gt;City&lt;/label&gt;
@@ -404,7 +404,14 @@
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-3"&gt;
         &lt;label for="state"&gt;State&lt;/label&gt;
-        &lt;Dropdown inputId="state" v-model="selectedState" :options="states" optionLabel="name" placeholder="Select" /&gt;
+        &lt;p:selectOneMenu id="state"&gt;
+            &lt;f:selectItem itemLabel="Select" itemValue="" /&gt;
+            &lt;f:selectItem itemLabel="Arizona" itemValue="Arizona" /&gt;
+            &lt;f:selectItem itemLabel="California" itemValue="California" /&gt;
+            &lt;f:selectItem itemLabel="Florida" itemValue="Florida" /&gt;
+            &lt;f:selectItem itemLabel="Ohio" itemValue="Ohio" /&gt;
+            &lt;f:selectItem itemLabel="Washington" itemValue="Washington" /&gt;
+        &lt;/p:selectOneMenu&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-3"&gt;
         &lt;label for="zip"&gt;Zip&lt;/label&gt;

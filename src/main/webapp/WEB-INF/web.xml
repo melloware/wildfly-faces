@@ -56,10 +56,6 @@
         <param-value>true</param-value>
     </context-param>
     <context-param>
-        <param-name>primefaces.FONT_AWESOME</param-name>
-        <param-value>true</param-value>
-    </context-param>
-    <context-param>
         <param-name>primefaces.THEME</param-name>
         <param-value>#{app.theme}</param-value>
     </context-param>
@@ -90,6 +86,10 @@
     <context-param>
         <param-name>primefaces.MULTI_VIEW_STATE_STORE</param-name>
         <param-value>client-window</param-value>
+    </context-param>
+    <context-param>
+        <param-name>primefaces.FLEX</param-name>
+        <param-value>true</param-value>
     </context-param>
 
     <!-- Context parameters - MyFaces -->
