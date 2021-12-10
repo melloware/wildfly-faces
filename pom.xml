@@ -15,7 +15,7 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <omnifaces.version>4.0-M12</omnifaces.version>
         <poi.version>5.1.0</poi.version>
-        <primefaces.version>10.0.0</primefaces.version>
+        <primefaces.version>11.0.0</primefaces.version>
         <primefaces-extensions.version>11.0.0</primefaces-extensions.version>
         <primefaces.optimizer.version>2.3.5</primefaces.optimizer.version>
         <jsf.stage>Production</jsf.stage>
