@@ -16,7 +16,7 @@ Some addition goals:
 ***
 - OpenJDK 11.0.10
 - JBoss Wildfly 18.0.1
-- WildFly Bootable 23.0
+- WildFly Bootable 26.0
 - JSF Production Mode
 - Intel(R) Core(TM) i7-8750H CPU @2.21 GHz 16GB RAM
 
