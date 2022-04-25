@@ -300,7 +300,7 @@
                         <feature-pack>
                             <groupId>com.melloware</groupId>
                             <artifactId>wildfly-myfaces-galleon-pack</artifactId>
-                            <version>9.0.0.Final</version>
+                            <version>9.26.0.Final</version>
                         </feature-pack>
                     </feature-packs>
                     <layers>
