@@ -30,19 +30,25 @@ import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
 import jakarta.inject.Named;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
 @Named("dfRootView")
 @RequestScoped
 public class DFRootView {
-    
+
     public void openLevel1() {
-        Map<String,Object> options = new HashMap<String, Object>();
+        Map<String, Object> options = new HashMap<String, Object>();
         options.put("modal", true);
         PrimeFaces.current().dialog().openDynamic("level1", options, null);
     }
-    
+
+    public void openLevel1WithFlash() {
+        FacesContext.getCurrentInstance().getExternalContext().getFlash().put("param1", LocalDateTime.now());
+        openLevel1();
+    }
+
     public void onReturnFromLevel1(SelectEvent event) {
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Data Returned", event.getObject().toString()));
     }

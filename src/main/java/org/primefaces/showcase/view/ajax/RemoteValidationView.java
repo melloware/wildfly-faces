@@ -31,7 +31,7 @@ import jakarta.inject.Named;
 @Named
 @RequestScoped
 public class RemoteValidationView {
-    
+
     private String firstname;
     private String lastname;
 

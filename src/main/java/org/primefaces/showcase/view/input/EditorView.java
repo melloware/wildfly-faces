@@ -29,9 +29,8 @@ import jakarta.inject.Named;
 @Named
 @RequestScoped
 public class EditorView {
-    
+
     private String text;
-    
     private String text2;
 
     public String getText() {

@@ -24,16 +24,12 @@
 package org.primefaces.showcase.view.data.dataexporter;
 
 import java.io.IOException;
-import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.util.Collections;
 import java.util.List;
 
-import jakarta.el.MethodExpression;
 import jakarta.faces.FacesException;
 import jakarta.faces.component.UIComponent;
-import jakarta.faces.context.ExternalContext;
 import jakarta.faces.context.FacesContext;
 
 import org.primefaces.component.api.DynamicColumn;
@@ -41,9 +37,6 @@ import org.primefaces.component.api.UIColumn;
 import org.primefaces.component.datatable.DataTable;
 import org.primefaces.component.datatable.export.DataTableExporter;
 import org.primefaces.component.export.ExportConfiguration;
-import org.primefaces.component.export.ExporterOptions;
-import org.primefaces.util.ComponentUtils;
-import org.primefaces.util.Constants;
 import org.primefaces.util.EscapeUtils;
 
 public class TextExporter extends DataTableExporter {
@@ -69,9 +62,11 @@ public class TextExporter extends DataTableExporter {
 
         if (exportConfiguration.isPageOnly()) {
             exportPageOnly(context, table, writer);
-        } else if (exportConfiguration.isSelectionOnly()) {
+        }
+        else if (exportConfiguration.isSelectionOnly()) {
             exportSelectionOnly(context, table, writer);
-        } else {
+        }
+        else {
             exportAll(context, table, writer);
         }
 

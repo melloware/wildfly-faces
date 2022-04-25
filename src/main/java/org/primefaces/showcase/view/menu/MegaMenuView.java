@@ -29,7 +29,7 @@ import jakarta.inject.Named;
 @Named
 @RequestScoped
 public class MegaMenuView {
- 
+
     private String orientation = "horizontal";
 
     public String getOrientation() {

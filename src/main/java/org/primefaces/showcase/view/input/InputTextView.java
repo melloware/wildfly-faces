@@ -29,7 +29,7 @@ import jakarta.inject.Named;
 @Named
 @RequestScoped
 public class InputTextView {
-    
+
     private String text;
 
     public String getText() {
