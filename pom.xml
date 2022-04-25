@@ -20,7 +20,7 @@
         <primefaces.optimizer.version>2.3.5</primefaces.optimizer.version>
         <jsf.stage>Production</jsf.stage>
         <version.bootable.jar>7.0.1.Final</version.bootable.jar>
-        <version.wildfly>25.0.1.Final</version.wildfly>
+        <version.wildfly>26.1.0.Final</version.wildfly>
     </properties>
 
     <dependencyManagement>
