@@ -16,7 +16,7 @@
         <omnifaces.version>4.0-M16</omnifaces.version>
         <poi.version>5.2.2</poi.version>
         <primefaces.version>11.0.0</primefaces.version>
-        <primefaces-extensions.version>11.0.3</primefaces-extensions.version>
+        <primefaces-extensions.version>11.0.4</primefaces-extensions.version>
         <primefaces.optimizer.version>2.3.5</primefaces.optimizer.version>
         <jsf.stage>Production</jsf.stage>
         <version.bootable.jar>7.0.2.Final</version.bootable.jar>
