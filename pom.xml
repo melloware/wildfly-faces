@@ -17,7 +17,6 @@
         <poi.version>5.2.2</poi.version>
         <primefaces.version>11.0.0</primefaces.version>
         <primefaces-extensions.version>11.0.4</primefaces-extensions.version>
-        <primefaces.optimizer.version>2.3.5</primefaces.optimizer.version>
         <jsf.stage>Production</jsf.stage>
         <version.bootable.jar>7.0.2.Final</version.bootable.jar>
         <version.wildfly>26.1.1.Final</version.wildfly>
@@ -263,33 +262,27 @@
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>nl.geodienstencentrum.maven</groupId>
-                <artifactId>sass-maven-plugin</artifactId>
-                <version>3.7.2</version>
+           <plugin>
+                <groupId>io.github.cleydyr</groupId>
+                <artifactId>dart-sass-maven-plugin</artifactId>
+                <version>0.3.0</version>
                 <executions>
                     <execution>
+                        <id>generate-css-using-sass</id>
                         <phase>generate-resources</phase>
                         <goals>
-                            <goal>update-stylesheets</goal>
+                            <goal>compile-sass</goal>
                         </goals>
+                        <configuration>
+                            <inputFolder>${basedir}/src/main/webapp/resources/showcase/css/layout</inputFolder>
+                            <outputFolder>${basedir}/src/main/webapp/resources/showcase/css/layout</outputFolder>
+                            <update>true</update>
+                            <noSourceMap>true</noSourceMap>
+                            <style>COMPRESSED</style>
+                            <quiet>false</quiet>
+                        </configuration>
                     </execution>
                 </executions>
-                <configuration>
-                    <sassSourceDirectory>${basedir}/src/main/webapp/resources/showcase/css</sassSourceDirectory>
-                    <destination>${basedir}/src/main/webapp/resources/showcase/css</destination>
-                    <sassOptions>
-                        <always_update>true</always_update>
-                        <sourcemap>:none</sourcemap>
-                    </sassOptions>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.jruby</groupId>
-                        <artifactId>jruby-complete</artifactId>
-                        <version>9.3.6.0</version>
-                    </dependency>
-                </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
