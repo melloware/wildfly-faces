@@ -1,5 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Discord Chat](https://img.shields.io/discord/591914197219016707.svg?color=7289da&label=chat&logo=discord&style=flat-square)](https://discord.gg/gzKFYnpmCY)
+[![Discord Chat](https://img.shields.io/badge/chat-discord-7289da)](https://discord.gg/gzKFYnpmCY)
+[![Maven Central](https://img.shields.io/maven-central/v/com.melloware/wildfly-myfaces-galleon-pack.svg)](https://repo.maven.apache.org/maven2/com/melloware/wildfly-myfaces-galleon-pack/)
 
 WildFly Bootable Faces
 ==========================
