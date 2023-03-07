@@ -12,7 +12,10 @@
 #
 # docker run -i --rm -p 8080:8080 melloware/wildfly-faces
 #
-FROM fabric8/java-alpine-openjdk11-jre
-COPY target/*-bootable.jar /deployments/app.jar
-RUN export JAVA_OPTIONS="$JAVA_OPTIONS -Xmx128m -Xms512m"
-ENTRYPOINT [ "/deployments/run-java.sh" ]
+FROM registry.access.redhat.com/ubi8/openjdk-11:latest
+COPY --chown=jboss:root target/*.jar /deployments/.
+EXPOSE 8080
+USER 185
+ENV AB_JOLOKIA_OFF=""
+ENV JAVA_OPTS="-Djboss.bind.address=0.0.0.0 -Djboss.bind.address.management=0.0.0.0"
+RUN chmod -R ug+rwX /deployments/.
