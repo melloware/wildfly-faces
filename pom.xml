@@ -16,7 +16,7 @@
         <omnifaces.version>4.1</omnifaces.version>
         <poi.version>5.2.3</poi.version>
         <primefaces.version>12.0.0</primefaces.version>
-        <primefaces-extensions.version>12.0.6</primefaces-extensions.version>
+        <primefaces-extensions.version>12.0.7</primefaces-extensions.version>
         <jsf.stage>Production</jsf.stage>
         <version.bootable.jar>9.0.0.Final</version.bootable.jar>
         <version.wildfly>27.0.1.Final</version.wildfly>
