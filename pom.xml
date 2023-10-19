@@ -19,7 +19,7 @@
         <primefaces-extensions.version>12.0.9</primefaces-extensions.version>
         <jsf.stage>Production</jsf.stage>
         <version.bootable.jar>9.0.0.Final</version.bootable.jar>
-        <version.wildfly>28.0.1.Final</version.wildfly>
+        <version.wildfly>30.0.0.Final</version.wildfly>
     </properties>
 
     <dependencyManagement>
